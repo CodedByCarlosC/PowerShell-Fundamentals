@@ -1,10 +1,12 @@
 ⚡ Windows PowerShell Fundamentals – Hands-On Lab
+
 📘 Overview
 
 This repository documents my hands-on learning and practical use of Windows PowerShell through a TryHackMe lab environment focusing on understanding how PowerShell is used in real-world environments, particularly within system administration, cybersecurity operations, and incident response.
 PowerShell is a powerful task automation and configuration management framework built on the .NET platform. Unlike traditional text-based command-line tools, PowerShell is object-oriented, allowing administrators and security professionals to work with structured data, automate complex tasks, and manage systems at scale.
 
 🧠 PowerShell 
+
 PowerShell is a core skill across modern IT and cybersecurity roles because it enables:
 Automation of repetitive administrative tasks
 Deep visibility into system and network configuration
@@ -17,6 +19,7 @@ Efficient investigation during security incidents
 PowerShell is heavily used by defenders and attackers alike, making it critical to understand from both perspectives.
 
 🧩 Lab Environment
+
 Platform: TryHackMe
 Target OS: Windows Server
 Shell: Windows PowerShell
@@ -27,6 +30,7 @@ PowerShell Help System
 Object-based pipelines
 
 🧱 PowerShell Fundamentals
+
 Cmdlets and Syntax
 PowerShell commands, known as cmdlets, follow a consistent Verb-Noun structure:
 Get-Content / Set-Location / New-Item
@@ -40,6 +44,7 @@ Get-Alias – maps traditional commands (e.g., dir, cd) to PowerShell equivalent
 ![image](https://github.com/CodedByCarlosC/PowerShell-Fundamentals/blob/341801481d8f686805b1f91dbc1abbb2da6fd69c/local%20user.PNG)
 
 📂 File System Navigation & Management
+
 I practiced managing files and directories using PowerShell-native cmdlets:
 Get-ChildItem – list files and directories
 Set-Location – change directories
@@ -53,6 +58,7 @@ PowerShell simplifies file operations by using a single, consistent set of cmdle
 ![image](https://github.com/CodedByCarlosC/PowerShell-Fundamentals/blob/341801481d8f686805b1f91dbc1abbb2da6fd69c/NEW%20ITEM.PNG)
 
 🔗 Object-Based Piping & Filtering
+
 PowerShell pipelines pass objects, not plain text. This enables powerful data manipulation without parsing strings.
 Key filtering and transformation cmdlets:
 Where-Object – filter objects based on conditions
@@ -67,6 +73,7 @@ This object-based model allows complex command chains to be built efficiently an
 ![image](https://github.com/CodedByCarlosC/PowerShell-Fundamentals/blob/341801481d8f686805b1f91dbc1abbb2da6fd69c/WHERE%20OBJECT.PNG)
 
 🖥️ System & Network Enumeration
+
 I used PowerShell to gather detailed system and network information, including:
 Get-ComputerInfo – comprehensive system configuration
 Get-LocalUser – enumerate local user accounts
@@ -77,6 +84,7 @@ Compared to legacy tools, these cmdlets provide richer and more structured outpu
 ![image](https://github.com/CodedByCarlosC/PowerShell-Fundamentals/blob/341801481d8f686805b1f91dbc1abbb2da6fd69c/get%20ipconfig.PNG)
 
 ⚙️ Process, Service, and Connection Analysis
+
 To monitor dynamic system activity, I explored:
 Get-Process – running processes with resource usage
 Get-Service – service status and configuration
@@ -95,6 +103,7 @@ I also reviewed Get-FileHash for file integrety verification and discussed Alter
 
 
 🧠 PowerShell Scripting & Automation Concepts
+
 While full scripting was beyond the scope of this lab, I explored how PowerShell scripting enables:
 Automation of administrative tasks
 Log analysis and IOC extraction
@@ -107,6 +116,7 @@ System administration and configuration management
 
 
 🌐 Remote Command Execution
+
 I studied the Invoke-Command cmdlet, which allows commands or scripts to be executed on remote systems.
 Key takeaways:
 Enables centralized management of multiple machines
@@ -117,6 +127,7 @@ Understanding Invoke-Command is essential for both secure remote administration 
 ![image](https://github.com/CodedByCarlosC/PowerShell-Fundamentals/blob/341801481d8f686805b1f91dbc1abbb2da6fd69c/invoke%20help.PNG)
 
 🛡️ Security Takeaways
+
 PowerShell provides deep visibility into Windows systems
 Object-based pipelines enable powerful automation and analysis
 Many real-world attacks leverage PowerShell for stealth and control
@@ -124,6 +135,7 @@ Monitoring PowerShell activity is critical in enterprise environments
 Strong PowerShell fundamentals improve detection and response capabilities
 
 📌 Why This Matters for Cybersecurity
+
 This project demonstrates practical PowerShell knowledge relevant to:
 SOC analysis
 Incident response
